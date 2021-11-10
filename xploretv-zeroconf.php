@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:         seso Zeroconf
- * Plugin URI:          https://github.com/xploretv2go/zeroconf.wp.plugin
- * Description:         Handle Zerconf data.
+ * Plugin Name:         xploretv.zeroconf.plugin
+ * Plugin URI:          https://github.com/xploretv2go/xploretv.zeroconf.plugin
+ * Description:         Device detection of NUKI bridge for xploretv.template theme.
  * Version:             0.1
  * Requires at least:   5.6
  * Requires PHP:        7.2
@@ -10,7 +10,7 @@
  * Author URI:          https://www.seso.at/
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:         seso-asmp
+ * Text Domain:         xploretv-zeroconf-plugin
  */
 
 function seso_zeroconf_settings_page() {

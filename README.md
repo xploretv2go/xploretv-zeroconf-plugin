@@ -5,4 +5,4 @@ This is a WordPress Plugin for the WordPress theme <a href="https://github.com/x
 Please make sure to install and activate the theme <strong>after</strong> installing the plugin.
 
 <h2>Installation</h2>
-Please move all files of this repository to your plugins folder. Example: [WEBROOT WORDPRESS]/wp-content/plugins/seso-zeroconf/
+Please move all files of this repository to your plugins folder. Example: [WEBROOT WORDPRESS]/wp-content/plugins/xploretv-zeroconf/
