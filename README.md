@@ -7,7 +7,7 @@ Although standard methods for detecting services on local networks, such as  <a 
 
 For example, this plugin can collect information from the proprietary broker servers of well-known devices such as [NUKI Smart Lock Bridges](https://api.nuki.io/discover/bridges) and/or [Philips Hue Bridges](https://discovery.meethue.com/) to process them in the WordPress theme xploretv.template harmonized with e.g. [ZeroConf data retrieved via API Service](https://github.com/xploretv2go/zeroconf.api.service).
 
-Please make sure to install and activate the theme <strong>after</strong> installing the plugin.
+Please make sure to install and activate the <a href="https://github.com/xploretv2go/xploretv.template">xploretv.template</a> theme <strong>after</strong> installing the plugin.
 
 <h2>Installation</h2>
 Please move all files of this repository to your plugins folder. Example: [WEBROOT WORDPRESS]/wp-content/plugins/xploretv-zeroconf/
