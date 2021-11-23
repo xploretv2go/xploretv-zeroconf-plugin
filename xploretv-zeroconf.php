@@ -28,7 +28,9 @@ add_action( 'admin_menu', 'seso_zeroconf_settings_page' );
 function seso_zeroconf_init() {
     $GLOBALS['devices']  = array();
 
-    $detection_url = 'https://api.nuki.io/discover/bridges';
+    $detection_url_nuki = 'https://api.nuki.io/discover/bridges';
+    $detection_url_zeroconf_api = 'http://localzeroconf:15051/a1/xploretv/v1/zeroconf';
+
     $nuki_result = file_get_contents($detection_url);
     if ($nuki_result) {
         $nuki_result = json_decode($nuki_result);
@@ -36,6 +38,15 @@ function seso_zeroconf_init() {
             $GLOBALS['devices'][]  = array('name' => 'Nuki', 'href' => '/devices/nuki/');
         }
     }
+
+    $zeroconf_api_result = file_get_contents($detection_url);
+    if ($zeroconf_api_result) {
+        $zeroconf_api_result_data = json_decode($zeroconf_api_result);
+        if (count($zeroconf_api_result->data) != 0) {
+            $GLOBALS['devices'][] = array('name' => 'zeroconf_api', 'href' => '/devices/zeroconf');
+        }
+    }
+
 }
 add_action( 'init', 'seso_zeroconf_init' );
 
