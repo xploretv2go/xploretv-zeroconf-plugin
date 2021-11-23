@@ -42,7 +42,7 @@ function seso_zeroconf_init() {
     $zeroconf_api_result = file_get_contents($detection_url);
     if ($zeroconf_api_result) {
         $zeroconf_api_result_data = json_decode($zeroconf_api_result);
-        if (count($zeroconf_api_result->data) != 0) {
+        if (count($zeroconf_api_result->services) != 0) {
             $GLOBALS['devices'][] = array('name' => 'zeroconf_api', 'href' => '/devices/zeroconf');
         }
     }
