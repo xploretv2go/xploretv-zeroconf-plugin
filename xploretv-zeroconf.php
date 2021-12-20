@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:         xploretv.zeroconf.plugin
- * Plugin URI:          https://github.com/xploretv2go/xploretv.zeroconf.plugin
+ * Plugin URI:          https://github.com/xploretv2go/xploretv-zeroconf-plugin
  * Description:         Device detection of NUKI bridge for xploretv.template theme.
  * Version:             0.1
  * Requires at least:   5.6
@@ -54,7 +54,7 @@ function seso_zeroconf_options() {
 ?>
     <div class="wrap">
         <h2>Zeroconf Settings</h2>
-        <h3>Available Zerconf data</h3>
+        <h3>Available Zeroconf data</h3>
         <?php
             if (count($GLOBALS['devices']) == 0) {
                 ?>
